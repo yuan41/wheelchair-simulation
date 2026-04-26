@@ -1,27 +1,30 @@
 #!/bin/bash
 
+
+# commented out the package installing stuff for Safety......
+
 # ==========================================
 # STEP 1: Dependency Checking & Installation
 # ==========================================
 # We include gnome-terminal to ensure we can pop open new GUI windows in Linux
-REQUIRED_PACKAGES=(
-    "socat"
-    "python3-serial"
-    "ros-humble-ros-gz-bridge"
-    "gnome-terminal"
-)
+# REQUIRED_PACKAGES=(
+#     "socat"
+#     "python3-serial"
+#     "ros-humble-ros-gz-bridge"
+#     "gnome-terminal"
+# )
 
-echo "--- Checking System Dependencies ---"
-for pkg in "${REQUIRED_PACKAGES[@]}"; do
-    if ! dpkg -s "$pkg" >/dev/null 2>&1; then
-        echo "Missing package: $pkg. Prompting for installation..."
-        sudo apt-get update
-        sudo apt-get install -y "$pkg"
-    else
-        echo "[OK] $pkg is already installed."
-    fi
-done
-echo "------------------------------------"
+# echo "--- Checking System Dependencies ---"
+# for pkg in "${REQUIRED_PACKAGES[@]}"; do
+#     if ! dpkg -s "$pkg" >/dev/null 2>&1; then
+#         echo "Missing package: $pkg. Prompting for installation..."
+#         sudo apt-get update
+#         sudo apt-get install -y "$pkg"
+#     else
+#         echo "[OK] $pkg is already installed."
+#     fi
+# done
+# echo "------------------------------------"
 
 # ==========================================
 # STEP 2: Launching the Pipeline Windows
