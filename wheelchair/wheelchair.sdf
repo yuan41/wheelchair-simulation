@@ -38,10 +38,19 @@
       </collision>
     </link>
 
-    <plugin
-      filename="libignition-gazebo-velocity-control-system.so"
-      name="ignition::gazebo::systems::VelocityControl">
-      <topic>cmd_vel</topic>
-    </plugin>
+      <plugin
+        filename="libignition-gazebo-odometry-publisher-system"
+        name="ignition::gazebo::systems::OdometryPublisher">
+        <odom_frame>odom</odom_frame>
+        <robot_base_frame>my_wheelchair</robot_base_frame>
+        <publish_odom_tf>true</publish_odom_tf>
+      </plugin>
+
+      <plugin
+        filename="libignition-gazebo-velocity-control-system.so"
+        name="ignition::gazebo::systems::VelocityControl">
+        <topic>cmd_vel</topic>
+      </plugin>
+     
   </model>
 </sdf>
