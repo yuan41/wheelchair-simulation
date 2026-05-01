@@ -1,12 +1,15 @@
 
 
-### Installation Requirement:
-
-1. Ubuntu 22.04
+## Installation Requirement:
+1. Windwos Subsystem for Linux (WSL) and Ubuntu 22.04
 2. Gazebo Fortress
 3. ROS Humble
 
-### 2. Binary Installation on Ubuntu
+### 1. Ubuntu 22.04 on WSL
+To download WSL, please first follow the installation guide from Microsoft (https://learn.microsoft.com/en-us/windows/wsl/install)
+`wsl.exe --install Ubuntu-22.04`
+
+### 2. Gazebo Binary Installation on Ubuntu
 
 Below section is installation instructions from Gazebo Official website with some modification tailored for this repository.
 
@@ -38,13 +41,13 @@ LIBGL_ALWAYS_SOFTWARE=1 ign gazebo empty.sdf
 
 Replace `empty.sdf` with the simulation description format file (Sdf) you wish to run.
 
-### 3. Binary Installation of ROS 2 on Ubuntu
+### 3. ROS2 Binary Installation on Ubuntu
 
 Follow instructions in: [Ubuntu (deb packages) — ROS 2 Documentation: Humble documentation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 
 ---
 
-#### Install Gnome Text Editor
+#### Install Gnome Terminals
 
  `sudo apt install gnome-terminal`
 
