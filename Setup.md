@@ -51,10 +51,10 @@ Follow instructions in: [Ubuntu (deb packages) — ROS 2 Documentation: Humble d
 
  `sudo apt install gnome-terminal`
 
-#### Package Instllations
+#### Package Instllations in Ubuntu terminal
 Run these commands one by one. Ubuntu may ask for user password to install any package:
-`sudo apt install socat`
-`sudo apt install python3`
-`sudo apt python3-serial`
-`sudo apt ros-humble-ros-gz-bridge`
+`sudo apt install socat`\
+`sudo apt install python3`\
+`sudo apt python3-serial`\
+`sudo apt ros-humble-ros-gz-bridge`\
 `sudo apt gnome-terminal`
