@@ -45,13 +45,9 @@ Replace `empty.sdf` with the simulation description format file (Sdf) you wish t
 
 Follow instructions in: [Ubuntu (deb packages) — ROS 2 Documentation: Humble documentation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 
----
 
-#### Install Gnome Terminals
 
- `sudo apt install gnome-terminal`
-
-#### Package Instllations in Ubuntu terminal
+## Package Instllations in Ubuntu terminal
 Run these commands one by one. Ubuntu may ask for user password to install any package:
 `sudo apt install socat`\
 `sudo apt install python3`\
