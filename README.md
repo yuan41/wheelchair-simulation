@@ -1,7 +1,7 @@
 
 
 ## Installation Requirement:
-1. Windwos Subsystem for Linux (WSL) and Ubuntu 22.04
+1. Windows Subsystem for Linux (WSL) and Ubuntu 22.04
 2. Gazebo Fortress
 3. ROS Humble
 
