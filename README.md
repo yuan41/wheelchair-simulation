@@ -42,7 +42,6 @@ LIBGL_ALWAYS_SOFTWARE=1 ign gazebo empty.sdf
 Replace `empty.sdf` with the simulation description format file (Sdf) you wish to run.
 
 ### 3. ROS2 Binary Installation on Ubuntu
-
 Follow instructions in: [Ubuntu (deb packages) — ROS 2 Documentation: Humble documentation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 
 
@@ -54,3 +53,6 @@ Run these commands one by one. Ubuntu may ask for user password to install any p
 `sudo apt python3-serial`\
 `sudo apt ros-humble-ros-gz-bridge`\
 `sudo apt gnome-terminal`
+
+# USB port connection to the WSL2
+First, install usbipd application based on your processor at (https://github.com/dorssel/usbipd-win/releases/tag/v5.3.0). Typically, for windows user, install the `usbipd-win_5.3.0_x64.msi` release.
