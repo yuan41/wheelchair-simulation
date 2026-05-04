@@ -18,6 +18,6 @@ echo "Launching Simulation from: $SCRIPT_DIR"
 echo "Target World: $1"
 
 # Launch Gazebo with the provided argument
-LIBGL_ALWAYS_SOFTWARE=1 ign gazebo "$1"
+LIBGL_ALWAYS_SOFTWARE=1 ign gazebo "$1" --verbose
 
 # LIBGL_ALWAYS_SOFTWARE=1 ign gazebo worlds/reduced_living_room.sdf
