@@ -55,4 +55,4 @@ Run these commands one by one. Ubuntu may ask for user password to install any p
 `sudo apt gnome-terminal`
 
 # USB port connection to the WSL2
-First, install usbipd application based on your processor at (https://github.com/dorssel/usbipd-win/releases/tag/v5.3.0). Typically, for windows user, install the `usbipd-win_5.3.0_x64.msi` release.
+First, install usbipd application at https://github.com/dorssel/usbipd-win/releases/tag/v5.3.0. Choose the type of Microsoft Windows Installer(msi) based on your processor. Typically, for windows user, install the `usbipd-win_5.3.0_x64.msi` release with `x64` processor.
