@@ -14,8 +14,8 @@ class WeightToCmdVel(Node):
         # for real hardware, change to '/dev/ttyUSB0' or '/dev/ttyACM0'
         # for fake serial, change to '/tmp/ttyV1'
         # self.serial_port = serial.Serial('/dev/ttyUSB0', 115200, timeout=0.1)  
-        #self.serial_port = serial.Serial('/dev/ttyACM0', 115200, timeout=0.1)  
-        self.serial_port = serial.Serial('/tmp/ttyV1', 115200, timeout=0.1)
+        self.serial_port = serial.Serial('/dev/ttyACM0', 115200, timeout=0.1)  
+        #self.serial_port = serial.Serial('/tmp/ttyV1', 115200, timeout=0.1)
         # Timer to check the serial port 20 times a second (50ms)
         self.timer = self.create_timer(0.05, self.timer_callback)
         self.get_logger().info("Weight to CmdVel Node Started. Listening to /tmp/ttyV1 or /dev/ttyUSB0...")

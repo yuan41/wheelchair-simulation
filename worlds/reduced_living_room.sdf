@@ -3,9 +3,9 @@
 <sdf version='1.8'>
   <world name='square_room_world'>
     
-    <physics name="1ms" type="ignored">
-      <max_step_size>0.001</max_step_size>
-      <real_time_factor>0.5</real_time_factor>
+    <physics name="10ms" type="ignored">
+      <max_step_size>0.01</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
     </physics>
 
     <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"></plugin>
