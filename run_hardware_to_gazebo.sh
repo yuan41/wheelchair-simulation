@@ -28,11 +28,13 @@ gnome-terminal --title="2: ROS Bridge" -- bash -c "\
 
 sleep 2
 
+#--ros-args -p use_sim_time:=true
+
 gnome-terminal --title="3: ROS Node (STM32)" -- bash -c "\
     source /opt/ros/humble/setup.bash && \
     cd $ROOT_DIR/scripts && \
     echo 'Reading from /dev/ttyACM0 -> publishing /cmd_vel...'; \
-    python3 weight_to_cmd_vel.py --ros-args -p use_sim_time:=true; \
+    python3 weight_to_cmd_vel.py; \ 
     exec bash"
 
 echo "All windows launched. Watch Terminal 3 for Published: messages."
